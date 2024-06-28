@@ -12,9 +12,9 @@ role enum("user","admin") default "user",
 password varchar(255) not null ,
 phone varchar(15) unique, 
 created_at timestamp default current_timestamp, 
-updated_at timestamp default current_timestamp),
+updated_at timestamp default current_timestamp,
 photo varchar(255)
-;
+);
 
 create table if not exists posts(
 id int primary key auto_increment,
