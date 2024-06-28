@@ -80,7 +80,10 @@ foreign key (user_id)
 references users(id) 
 on update cascade
 on delete cascade);
-drop table likes ;
+
+insert into users (name,email,role,password ,phone) -- account admin
+values ('ahmed sultan','ahmedsultan@gmail.com','admin',md5('123456789'),'01272638173');
+--drop table likes ;
 
 
 -- alter table users 
